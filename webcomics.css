@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none
+    font-size 100%;
+	vertical-align: baseline;
+}
+
+/*Thay đổi màu nền khi bôi đen*/
+::selection {
+    background: darksalmon;
+}
+::-webkit-selection {
+    background: darksalmon
+}
+::-moz-selection {
+    background: darksalmon
+}
+body {
+    /* ---------------------------------------------------------- Main css -------------------------------------------------------------*/
+
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+
+
+    background-color: rgb(95, 146, 1);
+    background-image: url(./images/bg.jpg);
+    height: 100%;
+    background-repeat: repeat;
+    background-size: cover;
+    opacity: 0.9;
+    color: #222;
+}
+.header {
+    padding: 30px 43% 30px 43%;
+    text-align: center;
+    background-color: rgb(137, 129, 33);
+    color: white;
+    background-image: url(./images/object.jpg);
+    background-size: cover;
+    opacity: 0.9;
+}
+.container-fluid {
+    padding: 10px 50px;
+    font-size: 120%;
+}
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+    float: left;
+    width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: rgb(231, 177, 10);
+    width: 100%;
+    padding: 20px;
+    background-image: url(./images/_bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+}
+
+#img1 {
+    background-image: url(./images/_aidairo.jpg);
+    background-size: cover;
+}
+#img2 {
+    background-image: url(./images/_flower.jpg);
+    background-size: cover;
+}
+#img3 {
+    background-image: url(./images/_vn2.jpg);
+    background-size: cover;
+}
+#img4 {
+    background-image: url(./images/_zotri.jpg);
+    background-size: cover;
+}
+#about {
+    background-image: url(./images/_me.jpg);
+    background-size: cover;
+}
+
+
+/* Add a card effect for articles */
+.card {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    
+    background-color: rgb(76, 75, 22);
+    clear: left;
+    height: 100px;
+    color: whitesmoke;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+
+    .leftcolumn,
+    .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+
+
+.nav {
+    justify-content: left;
+}
+i {
+    font-size: 40px;
+}
+/* footer styling */
+.footer {
+    text-align: center;
+}
+#in4 {
+    background-color: rgb(247, 241, 229);
+    color: rgb(48, 38, 38);
+    padding: 2%;
+    opacity: 0.9;
+}
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------- fOR PC AND LAPTOPS -------------------------------------------- */
+@media(min-width: 900px){
+    /* ----------------------------------------------------- Navbar ---------------------------------------------------------- */
+    .nav-bar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .nav1{
+        display: flex;
+        flex-direction: row;
+        margin-left: 1em;
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+    .nav1 a{
+        padding: 1em;
+        border: none;
+        border-right: 1px solid #adb5bd;
+        color: #adb5bd;
+        font-size: 1em;
+        text-decoration: none;
+    }
+    .nav1 input{
+        border: none;
+        margin-left: 0.5em;
+        padding: 0.8em 1em;
+        font-size: 1em;
+    }
+    .nav1 input::placeholder{
+        font-family: 'Roboto', sans-serif;
+        color: #adb5bd;
+        font-size: 1em;
+    }
+    input:focus, textarea:focus, select:focus{
+        outline: none;
+    }
+    .nav-bar h3{
+        padding: 0.8em 1em;
+        margin-left: 1em;
+        margin-bottom: 1em;
+        margin-top: 1em;
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    /* ------------------- MAIN BOOKS ---------------------------------- */
+    main{
+        margin-top: 1em;
+        font-family: 'Noto Sans JP', sans-serif;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .books{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        max-width: 600px;
+        justify-content: space-evenly;
+        background-color: rgb(236, 143, 94);
+        border-radius: 10px;
+        margin-bottom: 3em;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    }
+    .books:nth-of-type(2){
+        background-color: rgb(243, 182, 100);
+    }
+    .books:nth-of-type(3){
+        background-color: rgb(159, 187, 115);
+    }
+    .books:nth-of-type(4){
+        background-color: rgb(220, 213, 111);
+    }
+    .book-img{
+        width: 100%;
+        max-width: 500px;
+        border-radius: 3px;
+        transition: transform 1s;
+        margin: 1.5em;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+    .book-img:hover{
+        transform: scale(1.05);
+    }
+    .descp{
+        margin: 1.5em;
+        padding: 1em;
+        
+    }
+    .book-name{
+        font-weight: bold;
+        padding-bottom: 0.5em;
+        font-size: 1.1em;
+        letter-spacing: 1px;
+        color: white;
+    }
+    .author{
+        padding-bottom: 0.5em;
+        font-size: 1.1em;
+        letter-spacing: 1px;
+        color: white;
+    }
+    .rating{
+        padding-bottom: 1.2em;
+        font-size: 1em;
+        letter-spacing: 1px;
+        color: white;
+    }
+    .info{
+        font-size: 1em;
+        letter-spacing: 1px;
+        color: white;
+    }
+    .descp button{
+        margin-top: 1em;
+        background: none;
+        border: none;
+        color: rgb(236, 143, 94);
+        background-color: white;
+        padding: 0.6em 1.5em;
+        font-size: 1em;
+        border-radius: 20px;
+        font-weight: bolder;
+    }
+    .descp button:hover{
+        color: rgb(181, 109, 71);
+    }
+    #b1{
+        color: rgb(243, 182, 100);
+    }
+    #b1:hover{
+        color: rgb(164, 121, 66);
+    }
+    #b2{
+        color: rgb(159, 187, 115);
+    }
+    #b2:hover{
+        color: rgb(117, 139, 82);
+    }
+    #b3{
+        color: rgb(220, 213, 111);
+    }
+    #b3:hover{
+        color: rgb(138, 134, 70);
+    }
+}

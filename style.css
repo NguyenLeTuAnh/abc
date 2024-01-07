@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none
+}
+
+/*Thay đổi màu nền khi bôi đen*/
+::selection {
+    background: darksalmon;
+}
+::-webkit-selection {
+    background: darksalmon
+}
+::-moz-selection {
+    background: darksalmon
+}
+body {
+    background-color: rgb(95, 146, 1);
+    background-image: url(./images/bg.jpg);
+    height: 100%;
+    background-repeat: repeat;
+    background-size: cover;
+    opacity: 0.9;
+
+    font-family: sans-serif;
+    color: #222;
+}
+.header {
+    padding: 30px 43% 30px 43%;
+    text-align: center;
+    background-color: rgb(137, 129, 33);
+    color: white;
+    background-image: url(./images/object.jpg);
+    background-size: cover;
+    opacity: 0.9;
+}
+.container-fluid {
+    padding: 10px 50px;
+    font-size: 120%;
+}
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+    float: left;
+    width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: rgb(231, 177, 10);
+    width: 100%;
+    padding: 20px;
+    background-image: url(./images/_bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+}
+
+#img1 {
+    background-image: url(./images/_aidairo.jpg);
+    background-size: cover;
+}
+#img2 {
+    background-image: url(./images/_flower.jpg);
+    background-size: cover;
+}
+#img3 {
+    background-image: url(./images/_vn2.jpg);
+    background-size: cover;
+}
+#img4 {
+    background-image: url(./images/_zotri.jpg);
+    background-size: cover;
+}
+#about {
+    background-image: url(./images/_me.jpg);
+    background-size: cover;
+}
+
+
+/* Add a card effect for articles */
+.card {
+    padding: 20px;
+    margin-top: 20px;
+    transition: transform 0.5s;
+}
+.card:hover{
+    transform: scale(1.03);
+}
+
+
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    background-color: rgb(76, 75, 22);
+    clear: left;
+    height: 100px;
+    color: whitesmoke;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+
+    .leftcolumn,
+    .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+
+
+.nav {
+    justify-content: left;
+}
+i {
+    font-size: 40px;
+}
+/* footer styling */
+.footer {
+    text-align: center;
+}

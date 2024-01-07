@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none
+}
+
+/*Thay đổi màu nền khi bôi đen*/
+::selection {
+    background: darksalmon;
+}
+
+::-webkit-selection {
+    background: darksalmon
+}
+
+::-moz-selection {
+    background: darksalmon
+}
+
+body {
+    background-color: rgb(95, 146, 1);
+    background-image: url(./images/bg.jpg);
+    height: 100%;
+    background-repeat: repeat;
+    background-size: cover;
+    opacity: 0.9;
+
+    font-family: sans-serif;
+    color: #222;
+}
+
+.header {
+    padding: 30px 43% 30px 43%;
+    text-align: center;
+    background-color: rgb(137, 129, 33);
+    color: white;
+    background-image: url(./images/object.jpg);
+    background-size: cover;
+    opacity: 0.9;
+}
+
+.container-fluid {
+    padding: 10px 50px;
+    font-size: 120%;
+}
+
+a {
+    font-size: 120%;
+    color: whitesmoke;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(76, 75, 22);
+}
+
+ul {
+    display: inline;
+    list-style-type: none;
+    overflow: hidden;
+    padding: 10px 50px;
+}
+
+#menu {
+    display: flex;
+}
+
+#menu2 {
+    display: flex;
+}
+
+li {
+    display: inline;
+    text-align: center;
+    margin: 10px 10px 7px 2px;
+    letter-spacing: 2px;
+    padding-top: 10px;
+}
+
+.f {
+    font-size: 200%;
+}
+
+.e {
+    float: right;
+    border: 2px solid whitesmoke;
+    width: 100px;
+    height: 50px;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgb(76, 75, 22);
+    padding: 10px 50px;
+}
+
+div {
+    display: block;
+}
+
+
+
+
+h2 {
+    color: aqua;
+}
+
+#parent {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    margin-top: 1px;
+    text-align: center;
+}
+
+#child1 {
+    width: 35%;
+    background-color: rgb(240, 231, 213);
+    padding: 20px;
+}
+
+#child2 {
+    width: 35%;
+    background-color: rgb(247, 241, 229);
+    padding: 20px; 
+}
+
+#child3 {
+    width: 31%;
+    background-color: rgb(240, 231, 213);
+    padding: 20px;
+    overflow-wrap: break-word;
+}
+
+a.tip {
+    color: black;
+    transition: 0.5s;
+}
+
+a.tip:hover {
+    color: brown;
+    transition: 0.5s;
+}
+
+a.draw {
+    color: black;
+    transition: 0.5s;
+}
+
+a.draw:hover {
+    color: cadetblue;
+    transition: 0.5s;
+}
+
+a.dog {
+    color: black;
+    transition: 0.5s;
+}
+
+a.dog:hover {
+    color: burlywood;
+    transition: 0.5s;
+}
+
+
+
+.nav {
+    justify-content: left;
+    
+}
+i {
+    font-size: 40px;
+}
+/* footer styling */
+.footer {
+    text-align: center;
+}
+
+.content {
+    justify-content: center;
+    align-items: center;
+}
+p {
+    text-align: center;
+}
